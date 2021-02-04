@@ -1,5 +1,8 @@
 import java.util.*;
 import java.awt.*;
+//import TurtleGraphics.StandardPen;
+import java.util.Random;
+
 //import bookClasses.*;
 
 /**
@@ -13,7 +16,7 @@ import java.awt.*;
 public class Turtle extends SimpleTurtle
 {
   ////////////////// constructors ///////////////////////
-  
+  //private Pen pen = new Pen();
   /** Constructor that takes the x and y and a picture to
    * draw on
    * @param x the starting x position
@@ -74,5 +77,15 @@ public class Turtle extends SimpleTurtle
   {
      int z = 2;
     }
-
+    
+  public void drawsquare(int side)
+  {
+      for( int x = 0; x<4; x++)
+      {
+          pen.turn(90);
+          pen.move(30);
+          
+        }
+      
+    }
 } // this } is the end of class Turtle, put all new methods before this
